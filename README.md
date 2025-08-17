@@ -95,11 +95,10 @@
 
 ### 🟢 Node.js 安装
 
-项目依赖 Node.js，请前往官网下载安装：
+<details>
+<summary>📥 方式一：项目内集成安装（推荐）</summary>
 
-- **下载地址**：https://nodejs.org/en/download/
-- **版本要求**：>= 16.0.0
-
+```shell
 # 进入项目目录
 cd ~/MediaCrawler
 
@@ -119,13 +118,19 @@ cd ..
 echo '#!/bin/bash' > node.sh
 echo 'export PATH="$PWD/.nodejs/node-v22.7.0-linux-x64/bin:$PATH"' >> node.sh
 echo 'exec "$@"' >> node.sh
-chmod +x node.shchmod +x node.sh
+chmod +x node.sh
 
 # 检查版本
 ./node.sh node -v  # 应该显示 v22.7.0
 
 # 运行 npm 命令
 ./node.sh npm -v
+
+</details>
+
+<details>
+<summary>🌐 方式二：官网手动安装</summary>
+
 
 ### 📦 Python 包安装
 
