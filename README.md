@@ -95,24 +95,15 @@
 
 ### 🟢 Node.js 安装
 
-<details>
 <summary>📥 方式一：项目内集成安装（推荐）</summary>
 
 ```shell
-# 进入项目目录
-cd ~/MediaCrawler
+cd ~/MediaCrawler  # 进入项目目录
+mkdir -p .nodejs && cd .nodejs  # 创建存放 Node.js 的目录
+wget https://nodejs.org/dist/v22.7.0/node-v22.7.0-linux-x64.tar.xz   # 下载适合 Linux 的 Node.js 22.x 版本（64位）
+tar -xf node-v22.7.0-linux-x64.tar.xz # 解压
 
-# 创建存放 Node.js 的目录
-mkdir -p .nodejs && cd .nodejs
-
-# 下载适合 Linux 的 Node.js 22.x 版本（64位）
-wget https://nodejs.org/dist/v22.7.0/node-v22.7.0-linux-x64.tar.xz
-
-# 解压
-tar -xf node-v22.7.0-linux-x64.tar.xz
-
-# 回到项目根目录
-cd ..
+cd .. # 回到项目根目录
 
 # 在项目根目录创建启动脚本
 echo '#!/bin/bash' > node.sh
@@ -122,13 +113,8 @@ chmod +x node.sh
 
 # 检查版本
 ./node.sh node -v  # 应该显示 v22.7.0
-
-# 运行 npm 命令
 ./node.sh npm -v
-
-</details>
-
-<details>
+```
 <summary>🌐 方式二：官网手动安装</summary>
 
 
