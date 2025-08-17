@@ -146,7 +146,9 @@ uv run playwright install
 # 一些其他支持项，也可以在 config/base_config.py 查看功能，写的有中文注释
 
 # 从配置文件中读取关键词搜索相关的帖子并爬取帖子信息与评论
-uv run main.py --platform xhs --lt qrcode --type search
+./node.sh uv run main.py --platform xhs --lt qrcode --type search  #node集成在项目内，选择该命令
+
+uv run main.py --platform xhs --lt qrcode --type search  #node在系统中，选择该命令
 
 # 从配置文件中读取指定的帖子ID列表获取指定帖子的信息与评论信息
 uv run main.py --platform xhs --lt qrcode --type detail
