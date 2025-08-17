@@ -173,4 +173,7 @@ docs/.vitepress/cache
 
 # other gitignore
 .venv
-.refer
+.refer.nodejs/
+.venv/
+.uv/
+__pycache__/
